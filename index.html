@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Nirav Savaliya</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Nirav Savaliya</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <!-- <img src="./assets/profile-pic.png" alt="Keval Vala profile picture" /> -->
+        <img
+          src="./assets/programmeravatar.png"
+          alt="Keval Vala profile picture"
+        />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Nirav Savaliya</h1>
+        <p class="section__text__p2">SDET - Automation Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/QA_Nirav_Savaliya.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/nirav-savaliya-qa'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/SDET-QA-Nirav-Savaliya'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about2.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>4.5+ years <br />QA - Automaction Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bsc IT Bachelors Degree<br />MCA Masters Degree</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p style="text-align: justify">
+              Motivated and results-oriented software developer with 2+ years of
+              experience in .NET technologies, including C#, WPF, WinUI 3, MVVM,
+              .NET MVC, and Microsoft SQL Server. Proficient in designing
+              user-friendly applications and robust backend systems, with a
+              focus on delivering scalable software solutions. Strong
+              problem-solving abilities and a solid understanding of full-stack
+              development. Excellent communicator with proven skills in team
+              collaboration and project management, committed to continuous
+              learning and technological advancement.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <!-- Front-End Development -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Manual Testing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Languages</h3>
+                  <p>HTML, CSS, JavaScript</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Frameworks</h3>
+                  <p>WPF, MVVM</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI/UX Libraries</h3>
+                  <p>DevExpress Controls</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI/UX Features</h3>
+                  <p>
+                    Custom Controls, Dark and Light Mode, Media Control
+                    Integration, Sidebar Animations
+                  </p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tools</h3>
+                  <p>XAML, Data Binding in WPF</p>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <!-- Back-End Development -->
+          <div class="details-container">
+            <h2 class="experience-sub-title">Automation Testing</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Languages</h3>
+                  <p>C#, SQL, Python</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Frameworks and Platforms</h3>
+                  <p>.NET Framework, .NET Core, .NET 6+, ASP.NET MVC</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Database Systems</h3>
+                  <p>Microsoft SQL Server, MongoDB</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Cloud Services</h3>
+                  <p>Microsoft Azure (Azure Active Directory, Azure Storage)</p>
+                </div>
+              </article> -->
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Access and ORM</h3>
+                  <p>Entity Framework Core, LINQ</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>API Development and Integrations</h3>
+                  <p>RESTful APIs, .NET Web APIs</p>
+                </div>
+              </article>
+              <!-- <article>
+                <img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
+                <div>
+                  <h3>Version Control</h3>
+                  <p>Git, GitHub</p>
+                </div>
+              </article> -->
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div
+              class="article-container"
+              style="display: flex; justify-content: center"
+            >
+              <img src="./assets/one.jpg" alt="Project 1" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openModal('projectOneModal')"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div
+              class="article-container"
+              style="display: flex; justify-content: center"
+            >
+              <img src="./assets/two.jpg" alt="Project 2" class="project-img" />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openModal('projectTwoModal')"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div
+              class="article-container"
+              style="display: flex; justify-content: center"
+            >
+              <img
+                src="./assets/three.jpg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="openModal('projectThreeModal')"
+              >
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <!-- Project One Modal Structure -->
+    <div id="projectOneModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Custom Technical Building Equipment & Plans Design Tool</h3>
+          <span class="close" onclick="closeModal('projectOneModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <!-- <img
+            src="./assets/one.jpg"
+            alt="Project One Details"
+            class="project-img"
+          /> -->
+          <div class="project-description">
+            <p>
+              <strong>Project Overview:</strong> Developed a custom design tool
+              to streamline building installation diagram workflows, tailored
+              specifically for architecture and design needs, as a robust
+              alternative to Microsoft Visio.
+            </p>
+            <p>
+              <strong>Features:</strong>
+            </p>
+            <ul>
+              <li>
+                <strong>Custom Shape Creation:</strong> Enabled users to design
+                shapes representing real-world equipment and devices used in
+                installations.
+              </li>
+              <li>
+                <strong>Auto-Generated Unique IDs:</strong> Each shape received
+                a unique identifier, simplifying tracking and management.
+              </li>
+              <li>
+                <strong>Layered Group Management:</strong> Supported layered
+                views to organize and manage different installation groups
+                efficiently.
+              </li>
+              <li>
+                <strong>Centralized Information Management:</strong> Allowed
+                categorization of shapes with centralized control for
+                streamlined data handling.
+              </li>
+              <li>
+                <strong>Multitenant, Multiuser Environment:</strong> Designed
+                for collaborative work with offline sync capabilities, ensuring
+                uninterrupted access and updates across users.
+              </li>
+            </ul>
+            <p>
+              <strong>Technologies Used:</strong> .NET 6, WPF, DevExpress
+              Controls, .NET MVC Web APIs, Azure Active Directory, Azure
+              Storage.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Two Modal Structure -->
+    <div id="projectTwoModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Diamond Shape Designer Tool</h3>
+          <span class="close" onclick="closeModal('projectTwoModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <!-- <img
+            src="./assets/two.jpg"
+            alt="Project Two Details"
+            class="project-img"
+          /> -->
+          <div class="project-description">
+            <p>
+              <strong>Project Overview:</strong> Developed a user-friendly and
+              visually engaging interface for the Diamond Shape Designer Tool,
+              specifically tailored to support diamond shape design workflows.
+            </p>
+            <p>
+              <strong>Features:</strong>
+            </p>
+            <ul>
+              <li>
+                <strong>UI Development from Scratch:</strong> Built an intuitive
+                interface using WPF, DevExpress, C#, and the MVVM pattern to
+                meet project-specific design requirements.
+              </li>
+              <li>
+                <strong>Custom Tooltips with Animations:</strong> Implemented
+                unique tooltips displaying animated GIFs for diamond shapes,
+                adding interactivity and enhancing user engagement.
+              </li>
+              <li>
+                <strong>Light and Dark Modes:</strong> Designed dual themes to
+                support user preference, improving usability and visual appeal.
+              </li>
+              <li>
+                <strong>Dynamic Sidebar Animations:</strong> Created responsive
+                sidebar animations to provide a modern, polished user
+                experience.
+              </li>
+              <li>
+                <strong>Shadow Effects for Media:</strong> Utilized MediaControl
+                to display shadows for images and videos in the left-bottom
+                corner, adding depth and aesthetic refinement.
+              </li>
+            </ul>
+            <p>
+              <strong>Technologies Used:</strong> WPF, DevExpress, C#, .NET 8,
+              MVVM
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project Three Modal Structure -->
+    <div id="projectThreeModal" class="modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Desktop Management Tool</h3>
+          <span class="close" onclick="closeModal('projectThreeModal')"
+            >&times;</span
+          >
+        </div>
+        <div class="modal-body">
+          <!-- <img
+            src="./assets/three.jpg"
+            alt="Project Three Details"
+            class="project-img"
+          /> -->
+          <div class="project-description">
+            <p>
+              <strong>Project Overview:</strong> Developed a subscription-based
+              desktop management tool designed to enhance user customization and
+              productivity on Windows desktops.
+            </p>
+            <p>
+              <strong>Features:</strong>
+            </p>
+            <ul>
+              <li>
+                <strong>Custom Control Development:</strong> Built bespoke
+                controls throughout the application, delivering a unique user
+                experience without relying on third-party libraries.
+              </li>
+              <li>
+                <strong>Wallpaper Customization:</strong> Enabled one-click
+                categorization and application of desktop wallpapers, offering
+                users greater flexibility in personalizing their workspace.
+              </li>
+              <li>
+                <strong>Advanced Settings and Controls:</strong> Implemented
+                various settings, including options to disable tooltips and
+                sounds, providing users with greater control over the interface.
+              </li>
+              <li>
+                <strong>Workspace Management:</strong> Developed features for
+                creating custom workspaces and utilizing predefined workspaces
+                to streamline task organization.
+              </li>
+              <li>
+                <strong>Window and Brightness Management:</strong> Added tools
+                for managing multiple open windows and introduced shortcut-based
+                brightness adjustments for enhanced usability.
+              </li>
+            </ul>
+            <p><strong>Technologies Used:</strong> .NET 4.8, WPF, C#, MVVM</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:wwwvala2@gmail.com">wwwvala2@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/keval-vala/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Keval Vala. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="responsive.js"></script>
+  </body>
+</html>
